@@ -7,15 +7,18 @@ import 'package:maps_sqflite/featuers/todos/presentation/pages/add_todo_page.dar
 import 'package:maps_sqflite/featuers/todos/presentation/pages/todos_page.dart';
 
 class AppRouter {
-  static const String todos = "/todos";
+  // static const String todos = "/todos";
   static const String products = "/products";
-  static const String addTodos = "/addTodos";
+   // static const String addTodos = "/addTodos";
 
   static List<GetPage> appPages = [
     // GetPage(name: todos, page: () => TodosPage(), binding: TodosBinding()),
     // GetPage(
     //     name: addTodos, page: () => AddTodoPage(), binding: AddTodoBinding()),
     GetPage(
-        name: products, page: () => ProductsPage(), binding: ProductBinding()),
+        name: products,
+        page: () => ProductsPage(),
+        binding: ProductBinding()
+    ),
   ];
 }
